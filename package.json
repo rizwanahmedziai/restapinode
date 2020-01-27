@@ -1,0 +1,33 @@
+{
+  "name": "RESTfulAPI",
+  "version": "1.0.0",
+  "description": "A simple RESTful API built using Node and Express",
+  "main": "index.js",
+  "repository": "git@github.com:rizwanahmedziai/restapinode.git",
+  "author": "Rizwan Ahmed",
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint",
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  },
+  "noremonconfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
