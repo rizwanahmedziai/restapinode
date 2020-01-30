@@ -1,35 +1,39 @@
 {
-  "name": "RESTfulAPI",
-  "version": "1.0.0",
-  "description": "A simple RESTful API built using Node and Express",
-  "main": "index.js",
-  "repository": "git@github.com:rizwanahmedziai/restapinode.git",
-  "author": "Rizwan Ahmed",
-  "license": "ISC",
-  "scripts": {
-    "lint": "eslint",
-    "start": "nodemon app.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.8.9",
-    "nodemon": "^2.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0"
-  },
-  "noremonconfig": {
-    "restartable": "rs",
-    "ignore": [
-      "node_modules/**/node_modules"
-    ],
-    "delay": "2500",
-    "env": {
-      "NODE_ENV": "development",
-      "PORT": 4000
-    }
-  }
+	"name": "RESTfulAPI",
+	"version": "1.0.0",
+	"description": "A simple RESTful API built using Node and Express",
+	"main": "index.js",
+	"repository": "git@github.com:rizwanahmedziai/restapinode.git",
+	"author": "Rizwan Ahmed",
+	"license": "ISC",
+	"scripts": {
+		"lint": "eslint",
+		"start": "nodemon app.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.8.9",
+		"nodemon": "^2.0.2"
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.0.0",
+		"eslint-plugin-import": "^2.20.0",
+		"mocha": "^7.0.1",
+		"should": "^13.2.3",
+		"sinon": "^8.1.1",
+		"supertest": "^4.0.2"
+	},
+	"noremonconfig": {
+		"restartable": "rs",
+		"ignore": [
+			"node_modules/**/node_modules"
+		],
+		"delay": "2500",
+		"env": {
+			"NODE_ENV": "development",
+			"PORT": 4000
+		}
+	}
 }

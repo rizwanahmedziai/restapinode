@@ -8,6 +8,9 @@ function routes(Book) {
   bookRouter.route('/books')
     .post(controller.post)
     .get(controller.get);
+
+  // Middleware
+
   bookRouter.use('/books/:bookId', (req, res, next) => {
     Book.findById(req.params.bookId, (err, book) => {
       if (err) {

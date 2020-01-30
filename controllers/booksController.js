@@ -21,7 +21,10 @@ function booksController(Book) {
       return res.json(books);
     });
   }
+  // The revealing module patern
   return { post, get };
 }
 
 module.exports = booksController;
+
+// The revealing module patern
